@@ -1,0 +1,10 @@
+numpy
+pandas
+torch
+transformers
+scikit-learn
+scipy
+matplotlib
+networkx
+PyYAML
+safetensors

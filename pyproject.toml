@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bgfm"
+version = "0.1.0"
+description = "Brain Gut Foundation Model research workflow"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy", "pandas", "torch", "transformers", "scikit-learn", "scipy",
+  "matplotlib", "networkx", "PyYAML", "safetensors"
+]
+
+[project.scripts]
+bgfm = "bgfm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
